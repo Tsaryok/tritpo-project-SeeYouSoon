@@ -3,4 +3,4 @@ WildPixels - приключенческая игра-платформер на �
 
 Язык программирования: C++
 
-Среда разработки: [Visual Studio](https://visualstudio.microsoft.com/ru/?rr=https%3A%2F%2Fwww.google.com%2F)U
+Среда разработки: [Visual Studio](https://visualstudio.microsoft.com/ru/?rr=https%3A%2F%2Fwww.google.com%2F)
