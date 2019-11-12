@@ -24,6 +24,8 @@
 ### 1. Диаграмма вариантов использования 
 Диаграмма вариантов использования представляет собой следующую диаграмму:
 
+![UseCase](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Use%20Case/UseCase.PNG?raw=true)
+
 <a name="1.1"/>
 
 #### 1.1 Актёры
@@ -93,10 +95,14 @@
 #### 2.1 Игровой процесс
 **Описание.** Игрок на старте игры получает определенное количество очков здоровья. Может передвигаться, нажимая на соответствующие клавиши со стрелками, при приближении к противникам персонаж переходит в состояние боя. 
 
+![Игровой процесс](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Activity/ActivityGameProcess.PNG?raw=true)
+
 <a name="2.2"/>
 
 #### 2.2 Бой
 **Описание.** Бой проходит по принципу игры "камень-ножницы-бумага". Выбирается комбинация из трёх действий. В зависимости от комбинации "выбранной" противником урон проходит по противнику или игроку, либо не проходит вообще.
+
+![Бой](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Activity/ActivityBattle.PNG?raw=true)
 
 <a name="3"/>
 
@@ -106,14 +112,23 @@
 
 #### 3.1 Начало игры
 
+![Начало игры](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Sequence/SequenceStartGame.PNG?raw=true)
+
 <a name="3.2"/>
 
 #### 3.2 Игровой процесс
+
+![Игровой процесс](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Sequence/SequenceGameProcess.PNG?raw=true)
 
 <a name="3.3"/>
 
 #### 3.3 Настройки
 
+![Настройки](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Sequence/SequenceSettings.PNG?raw=true)
+
 <a name="3.4"/>
 
 #### 3.4 Выход из игры
+
+![Выход из игры](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Sequence/SequenceExitGame.PNG?raw=true)
+
