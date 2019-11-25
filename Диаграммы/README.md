@@ -142,10 +142,16 @@
 
 ### 4. Диаграмма классов
 
+![Диаграмма классов](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Class/Class.PNG?raw=true)
+
 <a name="5"/>
 
 ### 5. Диаграмма состояний
 
+![Диаграмма состояний](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/State/State.PNG?raw=true)
+
 <a name="6"/>
 
 ### 6. Совмещённая диаграмма развертываний и компонентов
+
+![Диаграмма развёртываний/компонентов](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Deployment/Deployment.PNG?raw=true)
