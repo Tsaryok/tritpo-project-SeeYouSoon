@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Camera.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCicle.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameInit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Interface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ObjectStorage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Observer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Values.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Background.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Character.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entity.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MainCharacter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Object.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Chest.cpp" />
+    <ClCompile Include="Source\CollisionObject.cpp" />
+    <ClCompile Include="Source\Menu.cpp" />
+    <ClCompile Include="Source\Button.cpp" />
+    <ClCompile Include="Source\EnemyCharacter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{78ee8db0-1340-412c-a9ac-767382955c26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{f853361b-cd74-4ae3-8881-e5d7e14c4625}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Camera.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameInit.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Interface.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ObjectStorage.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Observer.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Values.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Background.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Character.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\EnemyCharacter.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entity.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MainCharacter.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\NPC.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Object.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Chest.hpp" />
+    <ClInclude Include="Source\CollisionObject.hpp" />
+    <ClInclude Include="Source\InteractionObject.hpp" />
+    <ClInclude Include="Source\Menu.hpp" />
+    <ClInclude Include="Source\Button.hpp" />
+  </ItemGroup>
+</Project>
