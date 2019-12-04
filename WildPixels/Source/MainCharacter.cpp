@@ -44,3 +44,9 @@ void MainCharacter::stateMachine()
 		changeDestinationCoordinates();
 	}	
 }
+
+void MainCharacter::goThroughDoor(Door* door)
+{
+	setObjectPosition(door->getObjectPosition().x + (door->getDestination().w - destination_->w) / 2,
+		door->getObjectPosition().y + (door->getDestination().h - destination_->h));
+}

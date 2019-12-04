@@ -6,6 +6,7 @@
 #include "MainCharacter.hpp"
 #include "EnemyCharacter.hpp"
 #include "CollisionObject.hpp"
+#include "Door.hpp"
 
 class ObjectStorage
 {
@@ -18,27 +19,35 @@ public:
 	{
 		Camera::x = 0;
 		Camera::y = 0;
-		objects_.clear();
-		Observer::collisionObjects.clear();
+
+		addCollisionObject(new CollisionObject(620, 0, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(-15, 462, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(-15, 492, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(964, 442, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(964, 492, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(1890, 442, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(1890, 492, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(2594, 492, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(2594, 184, CollisionObject::Wall));
+		addCollisionObject(new CollisionObject(2594, -124, CollisionObject::Wall));
 		objects_.push_back(new Background());
-		addCollisionObject(new CollisionObject(0, 0, CollisionObject::Wall));
-		addCollisionObject(new CollisionObject(0, 304, CollisionObject::Wall));
-		addCollisionObject(new CollisionObject(906, 0, CollisionObject::Wall));
-		addCollisionObject(new CollisionObject(906, 304, CollisionObject::Wall));
-		addCollisionObject(new CollisionObject(0, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(80, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(160, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(240, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(320, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(400, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(480, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(560, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(640, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(720, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(800, 396, CollisionObject::Floor));
-		addCollisionObject(new CollisionObject(880, 396, CollisionObject::Floor));
+		
+
+		for (int i = 0; i < objects_[1]->mapSize.width; i += 80) 
+		{
+			addCollisionObject(new CollisionObject(i, 800, CollisionObject::Floor));
+		}
+
+		for (int i = 680; i < objects_[1]->mapSize.width; i += 80)
+		{
+			addCollisionObject(new CollisionObject(i, 370, CollisionObject::Floor));
+		}
+		
+		addDoors(new Door(1100, 48), new Door(764, 478));
+		addDoors(new Door(1600, 48), new Door(1600, 478));
+		addDoors(new Door(2000, 48), new Door(2000, 478));
 		addEnemy(new EnemyCharacter(700, 288));
-		Observer::player = new MainCharacter(150, 280);
+		Observer::player = new MainCharacter(150, 684);
 		objects_.push_back(Observer::player);
 	};
 
@@ -46,4 +55,5 @@ public:
 
 	void addCollisionObject(CollisionObject* obj);
 	void addEnemy(EnemyCharacter* enemy);
+	void addDoors(Door* door1, Door* door2);
 };

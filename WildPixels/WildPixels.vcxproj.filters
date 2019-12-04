@@ -10,9 +10,6 @@
     <ClCompile Include="Source\GameInit.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Interface.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\ObjectStorage.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -37,11 +34,24 @@
     <ClCompile Include="Source\Object.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Chest.cpp" />
-    <ClCompile Include="Source\CollisionObject.cpp" />
-    <ClCompile Include="Source\Menu.cpp" />
-    <ClCompile Include="Source\Button.cpp" />
-    <ClCompile Include="Source\EnemyCharacter.cpp" />
+    <ClCompile Include="Source\Button.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Chest.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CollisionObject.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EnemyCharacter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Menu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Door.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source">
@@ -56,9 +66,6 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Source\GameInit.hpp">
-      <Filter>Header</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Interface.hpp">
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Source\ObjectStorage.hpp">
@@ -91,10 +98,23 @@
     <ClInclude Include="Source\Object.hpp">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Chest.hpp" />
-    <ClInclude Include="Source\CollisionObject.hpp" />
-    <ClInclude Include="Source\InteractionObject.hpp" />
-    <ClInclude Include="Source\Menu.hpp" />
-    <ClInclude Include="Source\Button.hpp" />
+    <ClInclude Include="Source\Button.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Chest.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CollisionObject.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InteractionObject.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Menu.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Door.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

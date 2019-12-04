@@ -1,4 +1,5 @@
 #include "Character.hpp"
+#include <SDL_mixer.h>
 
 
 void Character::setState(const int state)

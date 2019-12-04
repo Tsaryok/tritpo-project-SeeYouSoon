@@ -19,4 +19,7 @@ public:
 		mapSize.width = currentTexture_.infoImage.widthImage;
 		mapSize.height = currentTexture_.infoImage.heightImage;
 	}
+	void stateMachine() override {
+
+	}
 };

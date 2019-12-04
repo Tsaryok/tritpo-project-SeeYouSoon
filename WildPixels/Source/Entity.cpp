@@ -48,7 +48,6 @@ void Entity::changeSourceCoordinates()
 			}
 		}
 	}
-	
 }
 void Entity::changeDestinationCoordinates()
 {
@@ -104,7 +103,7 @@ SDL_Texture* Entity::loadTexture(const char* path)
 	}
 	else
 	{
-		SDL_SetColorKey(loaded_surface, SDL_TRUE, SDL_MapRGB(loaded_surface->format, 0xFF, 0xFF, 0xFF));
+		//SDL_SetColorKey(loaded_surface, SDL_TRUE, SDL_MapRGB(loaded_surface->format, 0xFF, 0xFF, 0xFF));
 		final_texture = SDL_CreateTextureFromSurface(getRenderer(), loaded_surface);
 
 		if (final_texture == NULL)

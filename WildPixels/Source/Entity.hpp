@@ -39,6 +39,7 @@ public:
 	{
 		return *destination_;
 	}
+	
 	ObjectPosition getObjectPosition()
 	{
 		return objectPosition_;
@@ -94,6 +95,11 @@ protected:
 	}
 	virtual ~Entity() = default;//сделать очистку динамической памяти
 
+	void setObjectPosition(int x, int y)
+	{
+		objectPosition_.x = x;
+		objectPosition_.y = y;
+	}
 	void setOrientation(int orientation);
 	int getOrientation();
 	int getFrameCounter()

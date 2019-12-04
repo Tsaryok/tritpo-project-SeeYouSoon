@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2_mixer-2.0.4\include;C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2-2.0.10\include;C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2_image-2.0.5\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2_image-2.0.5\include;C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2-2.0.10\include;C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2_mixer-2.0.4\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2_mixer-2.0.4\lib\x86;C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2-2.0.10\lib\x86;C:\Users\Tsrayok\Desktop\Учёба\5_сем\ТРиТПО\WildPixels\Library\SDL2_image-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -135,13 +135,13 @@
     <ClInclude Include="Source\Button.hpp" />
     <ClInclude Include="Source\Chest.hpp" />
     <ClInclude Include="Source\CollisionObject.hpp" />
+    <ClInclude Include="Source\Door.hpp" />
     <ClInclude Include="Source\InteractionObject.hpp" />
     <ClInclude Include="Source\Menu.hpp" />
     <ClInclude Include="Source\Observer.hpp" />
     <ClInclude Include="Source\Background.hpp" />
     <ClInclude Include="Source\Camera.hpp" />
     <ClInclude Include="Source\Character.hpp" />
-    <ClInclude Include="Source\Interface.hpp" />
     <ClInclude Include="Source\MainCharacter.hpp" />
     <ClInclude Include="Source\EnemyCharacter.hpp" />
     <ClInclude Include="Source\Entity.hpp" />
@@ -155,6 +155,7 @@
     <ClCompile Include="Source\Button.cpp" />
     <ClCompile Include="Source\Chest.cpp" />
     <ClCompile Include="Source\CollisionObject.cpp" />
+    <ClCompile Include="Source\Door.cpp" />
     <ClCompile Include="Source\EnemyCharacter.cpp" />
     <ClCompile Include="Source\MainCharacter.cpp" />
     <ClCompile Include="Source\Background.cpp" />
@@ -166,7 +167,6 @@
     <ClCompile Include="Source\Entity.cpp" />
     <ClCompile Include="Source\GameCicle.cpp" />
     <ClCompile Include="Source\GameInit.cpp" />
-    <ClCompile Include="Source\Interface.cpp" />
     <ClCompile Include="Source\ObjectStorage.cpp" />
     <ClCompile Include="Source\Values.cpp" />
   </ItemGroup>

@@ -7,37 +7,42 @@
 MainCharacter* Observer::player = nullptr;
 vector<CollisionObject*> Observer::collisionObjects;
 vector<EnemyCharacter*> Observer::enemies;
+vector<Door*> Observer::doors;
 Observer::gameState Observer::gameState_ = Observer::Walk;
 
 void Observer::toActionTrying(const int signal)
 {
-	if (!gameState_)
+	switch (signal)
 	{
-		switch (signal) {
-		case 0:
-			player->actionTrying(MainCharacter::Static1);
-			break;
-		case 1:
-			player->actionTrying(MainCharacter::Walk, MainCharacter::Right);
-			break;
-		case 2:
-			player->actionTrying(MainCharacter::Walk, MainCharacter::Left);
-			break;
+	case 0:
+		player->actionTrying(MainCharacter::Static1);
+		break;
+	case 1:
+		player->actionTrying(MainCharacter::Walk, MainCharacter::Right);
+		break;
+	case 2:
+		player->actionTrying(MainCharacter::Walk, MainCharacter::Left);
+		break;
+	case 3:
+		player->actionTrying(MainCharacter::Attack1);
+		break;
+	case 4:
+		player->actionTrying(MainCharacter::Attack2);
+		break;
+	case 5:
+		player->actionTrying(MainCharacter::Attack3);
+		break;
+	case 6:
+		for (Door* obj : doors)
+		{
+			if (checkCollision(player, obj))
+			{
+				obj->toOpen();
+				player->goThroughDoor(obj->getOtherDoor());
+				break;
+			}
 		}
-	}
-	else
-	{
-		switch (signal) {
-		case 3:
-			player->actionTrying(MainCharacter::Attack1);
-			break;
-		case 4:
-			player->actionTrying(MainCharacter::Attack2);
-			break;
-		case 5:
-			player->actionTrying(MainCharacter::Attack3);
-			break;
-		}
+		break;
 	}
 }
 void Observer::toCamera()
@@ -46,14 +51,19 @@ void Observer::toCamera()
 		Observer::player->getObjectPosition().x + Observer::player->getWidthFrame() / 2 <=
 		(MainCharacter::mapSize.width - Values::SCREEN_WIDTH / 2))
 	{
-		Camera::x = Observer::player->getObjectPosition().x + Observer::player->getWidthFrame() /
-			2 - Values::SCREEN_WIDTH / 2;
+		Camera::x = Observer::player->getObjectPosition().x + Observer::player->getWidthFrame()
+			/ 2 - Values::SCREEN_WIDTH / 2;
 	}
-	else if (Observer::player->getObjectPosition().x - Observer::player->getWidthFrame() / 2 >
+	else if (Observer::player->getObjectPosition().x + Observer::player->getWidthFrame() / 2 >
 		(MainCharacter::mapSize.width - Values::SCREEN_WIDTH / 2))
 	{
 		Camera::x = MainCharacter::mapSize.width - Values::SCREEN_WIDTH;
-	}//–ешить чЄ по высоте
+	}
+	else
+	{
+		Camera::x = 0;
+	}
+	Camera::y = Observer::player->getObjectPosition().y - 280;
 }
 bool Observer::checkCollision(Entity* entityA, Entity* entityB)
 {

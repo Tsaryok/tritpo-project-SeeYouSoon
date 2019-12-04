@@ -57,6 +57,7 @@ int main(int argc, char* args[])
 								quitMenu = true;
 								quitGamePlay = false;
 								delete(objects);
+								Observer::doors.clear();
 								objects = new ObjectStorage();
 								break;
 							case button->Exit:

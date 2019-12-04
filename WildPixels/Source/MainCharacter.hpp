@@ -1,5 +1,6 @@
 #pragma once
 #include "Character.hpp"
+#include "Door.hpp"
 #include <string>
 
 using namespace std;
@@ -59,6 +60,7 @@ public:
 			hitPoint_ = maxHitPoint_;
 		}
 	}
+	void goThroughDoor(Door* door);
 	void setMaxHitPoint(const int maxHitPoint){ maxHitPoint_ = maxHitPoint; }
 	int getMaxHitPoint() const{ return maxHitPoint_; }
 
