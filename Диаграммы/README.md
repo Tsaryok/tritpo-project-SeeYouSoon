@@ -19,6 +19,12 @@
 3.3 [Настройки](#3.3)<br>
 3.4 [Выход из игры](#3.4)<br>
 
+4. [Диаграмма классов](#4) 
+
+5. [Диаграмма состояний](#5) 
+
+6. [Совмещённая диаграмма развертываний и компонентов](#6) 
+
 <a name="1"/>
 
 ### 1. Диаграмма вариантов использования 
@@ -132,3 +138,20 @@
 
 ![Выход из игры](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Sequence/SequenceExitGame.PNG?raw=true)
 
+<a name="4"/>
+
+### 4. Диаграмма классов
+
+![Диаграмма классов](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Class/Class.PNG?raw=true)
+
+<a name="5"/>
+
+### 5. Диаграмма состояний
+
+![Диаграмма состояний](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/State/State.PNG?raw=true)
+
+<a name="6"/>
+
+### 6. Совмещённая диаграмма развертываний и компонентов
+
+![Диаграмма развёртываний/компонентов](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/Диаграммы/Deployment/Deployment.PNG?raw=true)
