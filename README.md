@@ -12,3 +12,5 @@ WildPixels - приключенческая игра-платформер на �
 [Правила игры](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0%20%D0%B8%D0%B3%D1%80%D1%8B/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0.md)
 
 [Диаграммы](https://github.com/Tsaryok/tritpo-project-WildPixel/tree/master/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B)
+
+[Тестирование](https://github.com/Tsaryok/tritpo-project-WildPixel/blob/master/%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/TestPlan.md)
